@@ -1,0 +1,17 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+/* The actual container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(16, 16px);
+}
+
+/* Each individual square */
+.square {
+    background-color: gray;
+    border: solid purple 1px;
+    height: 16px;
+}
