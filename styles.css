@@ -3,13 +3,21 @@
     padding: 0;
 }
 
+.ui {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    margin-top: 10rem;
+}
+
 /* The actual container */
 .container {
     display: grid;
     grid-template-columns: repeat(16, 16px);
     border: solid black 1px;
-    max-width: 256px;
-    max-height: 256px;
+    
 }
 
 /* Each individual square */
