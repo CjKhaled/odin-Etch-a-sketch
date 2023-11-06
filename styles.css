@@ -15,7 +15,6 @@
 /* The actual container */
 .container {
     display: grid;
-    grid-template-columns: repeat(16, 16px);
     border: solid black 1px;
     
 }
