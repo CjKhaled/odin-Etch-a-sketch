@@ -5,7 +5,7 @@ const button = document.querySelector("button");
 let amountOfSquares = 16;
 
 function createGrid(amountOfSquares) {
-  container.style.gridTemplateColumns = `repeat(${amountOfSquares}, 16px)`;
+  container.style.gridTemplateColumns = `repeat(${amountOfSquares}, auto)`;
   for (let count = 0; count !== amountOfSquares ** 2 - 1; count++) {
     const square = document.createElement("div");
     square.setAttribute("class", "square");
@@ -36,8 +36,11 @@ addDraw();
 // When button is clicked, we delete the old grid and make a new one
 button.addEventListener("click", (e) => {
   let number = prompt("Number of squares per side: ");
+  if (number > 100) {
+    alert("Max amount of squares is 100! We set it there instead.")
+  }
   amountOfSquares = number;
   deleteGrid();
-  createGrid(amountOfSquares);
+  createGrid(number);
   addDraw();
 });

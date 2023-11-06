@@ -7,7 +7,6 @@
     display: flex;
     text-align: center;
     justify-content: center;
-    align-items: center;
     gap: 10rem;
     margin-top: 10rem;
 }
@@ -16,15 +15,16 @@
 .container {
     display: grid;
     border: solid black 1px;
-    
+    width: 960px;
+    height: 960px;
+    margin-bottom: 5rem;
 }
 
 /* Each individual square */
 .square {
-    height: 16px;
+    
 }
 
 .color-square {
     background-color: black;
-    height: 16px;
 }
